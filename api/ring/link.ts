@@ -2,11 +2,11 @@
 // service, this matches the nonce Ring redirected them with against a
 // pending unclaimed token, claims it for their account, and confirms +
 // finalizes the integration with Ring.
-import type { IncomingRequest, OutgoingResponse } from "../_http.ts";
-import { kvDel, kvGet, kvSet, kvSmembers, kvSrem } from "../_kv.ts";
-import { getSessionEmail } from "../_auth/session.ts";
-import { computeNonce, isNonceTimeFresh, nonceMatches } from "../_auth/nonce.ts";
-import type { RingLink } from "../_ringProxy.ts";
+import type { IncomingRequest, OutgoingResponse } from "../_http.js";
+import { kvDel, kvGet, kvSet, kvSmembers, kvSrem } from "../_kv.js";
+import { getSessionEmail } from "../_auth/session.js";
+import { computeNonce, isNonceTimeFresh, nonceMatches } from "../_auth/nonce.js";
+import type { RingLink } from "../_ringProxy.js";
 
 const APP_INTEGRATIONS_URL = "https://api.amazonvision.com/v1/accounts/me/app-integrations";
 const UNCLAIMED_INDEX_KEY = "unclaimed_index";

@@ -1,7 +1,7 @@
 // Vercel serverless function entry point. Thin adapter around the shared
 // proxy logic in ../_ringProxy.ts - see that file for the rationale.
-import type { IncomingRequest, OutgoingResponse } from "../_http.ts";
-import { proxyRingApiRequest } from "../_ringProxy.ts";
+import type { IncomingRequest, OutgoingResponse } from "../_http.js";
+import { proxyRingApiRequest } from "../_ringProxy.js";
 
 export default async function handler(req: IncomingRequest, res: OutgoingResponse) {
   const url = new URL(req.url ?? "/", "http://localhost");

@@ -8,8 +8,8 @@
 // shapes (JSON body, form-urlencoded body, or query string).
 
 import { randomUUID } from "node:crypto";
-import type { IncomingRequest, OutgoingResponse } from "./_http.ts";
-import { kvSadd, kvSet } from "./_kv.ts";
+import type { IncomingRequest, OutgoingResponse } from "./_http.js";
+import { kvSadd, kvSet } from "./_kv.js";
 
 const RING_TOKEN_URL = "https://oauth.ring.com/oauth/token";
 const USERS_ME_URL = "https://api.amazonvision.com/v1/users/me";

@@ -1,5 +1,5 @@
-import type { IncomingRequest, OutgoingResponse } from "../_http.ts";
-import { clearSessionCookie } from "../_auth/session.ts";
+import type { IncomingRequest, OutgoingResponse } from "../_http.js";
+import { clearSessionCookie } from "../_auth/session.js";
 
 export default async function handler(req: IncomingRequest, res: OutgoingResponse) {
   if (req.method !== "POST") {

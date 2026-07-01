@@ -4,8 +4,8 @@
 // browser entirely: the token lives in `ring_link:{email}`, keyed by the
 // signed-in partner session, and is attached here server-side.
 
-import { kvGet, kvSet } from "./_kv.ts";
-import { getSessionEmail } from "./_auth/session.ts";
+import { kvGet, kvSet } from "./_kv.js";
+import { getSessionEmail } from "./_auth/session.js";
 
 const RING_API_BASE_URL = "https://api.amazonvision.com";
 const RING_TOKEN_URL = "https://oauth.ring.com/oauth/token";

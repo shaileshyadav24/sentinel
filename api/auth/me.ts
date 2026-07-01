@@ -1,5 +1,5 @@
-import type { IncomingRequest, OutgoingResponse } from "../_http.ts";
-import { getSessionEmail } from "../_auth/session.ts";
+import type { IncomingRequest, OutgoingResponse } from "../_http.js";
+import { getSessionEmail } from "../_auth/session.js";
 
 export default async function handler(req: IncomingRequest, res: OutgoingResponse) {
   if (req.method !== "GET") {

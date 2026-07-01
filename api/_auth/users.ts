@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
-import { kvGet, kvSet } from "../_kv.ts";
-import { hashPassword, verifyPassword } from "./password.ts";
+import { kvGet, kvSet } from "../_kv.js";
+import { hashPassword, verifyPassword } from "./password.js";
 
 export interface UserRecord {
   id: string;

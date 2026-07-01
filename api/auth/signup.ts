@@ -1,6 +1,6 @@
-import type { IncomingRequest, OutgoingResponse } from "../_http.ts";
-import { createSessionCookie } from "../_auth/session.ts";
-import { createUser, getUser } from "../_auth/users.ts";
+import type { IncomingRequest, OutgoingResponse } from "../_http.js";
+import { createSessionCookie } from "../_auth/session.js";
+import { createUser, getUser } from "../_auth/users.js";
 
 export default async function handler(req: IncomingRequest, res: OutgoingResponse) {
   if (req.method !== "POST") {
